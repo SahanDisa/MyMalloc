@@ -1,0 +1,14 @@
+mymalloc.h - header file of the malloc functions
+	     work as the interface 
+mymalloc.c - all implementation part is done in here
+
+mymalloc.o - that can be linked into other programs that use mymalloc
+		gcc -o mymalloc.o -c mymalloc.c
+
+Use the malloc in other programs -
+               - Add an include line (#include "mymalloc.h") 
+		 in all program source files that use library definitions (e.g test.c)
+	       - Link the program's .c file with the library object file 
+			gcc test.c mymalloc.o
+
+Then Run the Executable e.g a.exe
